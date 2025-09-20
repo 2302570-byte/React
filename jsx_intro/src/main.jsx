@@ -1,10 +1,21 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+
+const myElement = (
+  <>
+    <h1>React is {5 + 5} times better with JSX </h1>;
+  </>
+);
+
+const myParagraph = (
+  <>
+    <p>I am a paragraph</p>
+    <p>I am a paragraph as well</p>
+  </>
+);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+  <>
+  myElement
+  myParagraph
+  </>
+);
